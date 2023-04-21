@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902659B129F26DF300291884 /* APIServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902659B029F26DF300291884 /* APIServiceProtocols.swift */; };
+		902659B329F26E3A00291884 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902659B229F26E3A00291884 /* APIError.swift */; };
 		90686F1F29EF5D05005A679D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F1E29EF5D05005A679D /* DetailView.swift */; };
 		90686F2129EF6668005A679D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2029EF6668005A679D /* DetailViewModel.swift */; };
 		90686F2329EFD811005A679D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2229EFD811005A679D /* MainViewModel.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		902659B029F26DF300291884 /* APIServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocols.swift; sourceTree = "<group>"; };
+		902659B229F26E3A00291884 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		90686F1E29EF5D05005A679D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		90686F2029EF6668005A679D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		90686F2229EFD811005A679D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -86,11 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		90686F8129F257A0005A679D /* Model */ = {
+		902659B429F26E6000291884 /* API */ = {
 			isa = PBXGroup;
 			children = (
 				90686F8629F25840005A679D /* Response */,
 				90686F7D29F256D9005A679D /* AdviceAPI.swift */,
+				902659B229F26E3A00291884 /* APIError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		90686F8129F257A0005A679D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				902659B429F26E6000291884 /* API */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +129,7 @@
 		90686F8429F257D1005A679D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				902659B029F26DF300291884 /* APIServiceProtocols.swift */,
 				90686F2429EFE774005A679D /* APIService.swift */,
 			);
 			path = Service;
@@ -335,8 +349,10 @@
 			files = (
 				90686F2329EFD811005A679D /* MainViewModel.swift in Sources */,
 				90686F8029F25714005A679D /* AdviceModel.swift in Sources */,
+				902659B129F26DF300291884 /* APIServiceProtocols.swift in Sources */,
 				90D974FD29EA293800191FF3 /* MainView.swift in Sources */,
 				90686F7E29F256D9005A679D /* AdviceAPI.swift in Sources */,
+				902659B329F26E3A00291884 /* APIError.swift in Sources */,
 				90686F1F29EF5D05005A679D /* DetailView.swift in Sources */,
 				90D974FB29EA293800191FF3 /* Swiftui_MoyaApp.swift in Sources */,
 				90686F2529EFE774005A679D /* APIService.swift in Sources */,

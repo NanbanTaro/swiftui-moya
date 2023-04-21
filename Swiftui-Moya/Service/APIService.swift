@@ -14,6 +14,11 @@ import Moya
 final class APIService {
 
     let provider = MoyaProvider<AdviceAPI>()
+}
+
+// MARK: - APIServiceProtocols
+
+extension APIService: APIServiceProtocols {
 
     func fetchAdvice() -> AnyPublisher<AdviceModel, Error> {
         return self.provider
@@ -27,11 +32,4 @@ final class APIService {
             .decode(type: AdviceModel.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
-}
-
-enum APIError: Error {
-    case invalidURL
-    case invalidResponse(Data, HTTPURLResponse)
-    case decodingError(DecodingError)
-    case genericError(Error)
 }

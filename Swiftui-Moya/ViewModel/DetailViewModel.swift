@@ -10,11 +10,20 @@ import Foundation
 import Combine
 
 final class DetailViewModel: ObservableObject {
-    private let service = APIService()
+
+    private let APIservice: APIServiceProtocols
     private var cancellables = Set<AnyCancellable>()
 
+    // MARK: - Init
+
+    init() {
+        self.APIservice = APIService()
+    }
+
+    // MARK: - Function
+
     func fetch() {
-        self.service.fetchAdvice().sink(
+        self.APIservice.fetchAdvice().sink(
             receiveCompletion: { result in
                 switch result {
                 case .failure(let error):
