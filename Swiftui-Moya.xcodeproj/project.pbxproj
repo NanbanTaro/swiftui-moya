@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5202FB2C13FA98FF68E577A5 /* libPods-Swiftui-MoyaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA3456F793E59FEA7F87CAA /* libPods-Swiftui-MoyaTests.a */; };
-		570E3DFEB40E5A4B609FCF62 /* Pods_Swiftui_Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C96EC9F63CDCEFDDA60014 /* Pods_Swiftui_Moya.framework */; };
 		90686F1F29EF5D05005A679D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F1E29EF5D05005A679D /* DetailView.swift */; };
 		90686F2129EF6668005A679D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2029EF6668005A679D /* DetailViewModel.swift */; };
 		90686F2329EFD811005A679D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2229EFD811005A679D /* MainViewModel.swift */; };
 		90686F2529EFE774005A679D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2429EFE774005A679D /* APIService.swift */; };
+		90686F7C29F2561C005A679D /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90686F7B29F2561C005A679D /* CombineMoya */; };
 		90D974FB29EA293800191FF3 /* Swiftui_MoyaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D974FA29EA293800191FF3 /* Swiftui_MoyaApp.swift */; };
 		90D974FD29EA293800191FF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D974FC29EA293800191FF3 /* MainView.swift */; };
 		90D974FF29EA293800191FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D974FE29EA293800191FF3 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		90D9750C29EA293900191FF3 /* Swiftui_MoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D9750B29EA293900191FF3 /* Swiftui_MoyaTests.swift */; };
 		90D9751629EA293900191FF3 /* Swiftui_MoyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D9751529EA293900191FF3 /* Swiftui_MoyaUITests.swift */; };
 		90D9751829EA293900191FF3 /* Swiftui_MoyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D9751729EA293900191FF3 /* Swiftui_MoyaUITestsLaunchTests.swift */; };
-		D3508F38C03BAE0A64D5B504 /* libPods-Swiftui-MoyaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD59FB6304C120C5A683B71A /* libPods-Swiftui-MoyaUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AA3456F793E59FEA7F87CAA /* libPods-Swiftui-MoyaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swiftui-MoyaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B70A9CED2F812A3E31867CE /* Pods-Swiftui-Moya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-Moya.release.xcconfig"; path = "Target Support Files/Pods-Swiftui-Moya/Pods-Swiftui-Moya.release.xcconfig"; sourceTree = "<group>"; };
-		21F27225AD4D747C352278B6 /* Pods-Swiftui-MoyaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-MoyaUITests.release.xcconfig"; path = "Target Support Files/Pods-Swiftui-MoyaUITests/Pods-Swiftui-MoyaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		26433812E5B541E715384611 /* Pods-Swiftui-Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-Moya.debug.xcconfig"; path = "Target Support Files/Pods-Swiftui-Moya/Pods-Swiftui-Moya.debug.xcconfig"; sourceTree = "<group>"; };
-		4A87AD256E283676CFB9F122 /* Pods-Swiftui-MoyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-MoyaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Swiftui-MoyaUITests/Pods-Swiftui-MoyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D8BA864E93259DCA05D6B42 /* Pods-Swiftui-MoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-MoyaTests.debug.xcconfig"; path = "Target Support Files/Pods-Swiftui-MoyaTests/Pods-Swiftui-MoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90686F1E29EF5D05005A679D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		90686F2029EF6668005A679D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		90686F2229EFD811005A679D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -62,9 +54,6 @@
 		90D9751129EA293900191FF3 /* Swiftui-MoyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swiftui-MoyaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D9751529EA293900191FF3 /* Swiftui_MoyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftui_MoyaUITests.swift; sourceTree = "<group>"; };
 		90D9751729EA293900191FF3 /* Swiftui_MoyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftui_MoyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		90FFF889D33A2CECB577C433 /* Pods-Swiftui-MoyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-MoyaTests.release.xcconfig"; path = "Target Support Files/Pods-Swiftui-MoyaTests/Pods-Swiftui-MoyaTests.release.xcconfig"; sourceTree = "<group>"; };
-		B5C96EC9F63CDCEFDDA60014 /* Pods_Swiftui_Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiftui_Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD59FB6304C120C5A683B71A /* libPods-Swiftui-MoyaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swiftui-MoyaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570E3DFEB40E5A4B609FCF62 /* Pods_Swiftui_Moya.framework in Frameworks */,
+				90686F7C29F2561C005A679D /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5202FB2C13FA98FF68E577A5 /* libPods-Swiftui-MoyaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,26 +76,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3508F38C03BAE0A64D5B504 /* libPods-Swiftui-MoyaUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6AA809B792FF1A0FABD79A49 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				26433812E5B541E715384611 /* Pods-Swiftui-Moya.debug.xcconfig */,
-				0B70A9CED2F812A3E31867CE /* Pods-Swiftui-Moya.release.xcconfig */,
-				5D8BA864E93259DCA05D6B42 /* Pods-Swiftui-MoyaTests.debug.xcconfig */,
-				90FFF889D33A2CECB577C433 /* Pods-Swiftui-MoyaTests.release.xcconfig */,
-				4A87AD256E283676CFB9F122 /* Pods-Swiftui-MoyaUITests.debug.xcconfig */,
-				21F27225AD4D747C352278B6 /* Pods-Swiftui-MoyaUITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		90D974EE29EA293800191FF3 = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +89,6 @@
 				90D9750A29EA293900191FF3 /* Swiftui-MoyaTests */,
 				90D9751429EA293900191FF3 /* Swiftui-MoyaUITests */,
 				90D974F829EA293800191FF3 /* Products */,
-				6AA809B792FF1A0FABD79A49 /* Pods */,
-				940DBC75D14B74B23AFC6B6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,16 +143,6 @@
 			path = "Swiftui-MoyaUITests";
 			sourceTree = "<group>";
 		};
-		940DBC75D14B74B23AFC6B6F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5C96EC9F63CDCEFDDA60014 /* Pods_Swiftui_Moya.framework */,
-				0AA3456F793E59FEA7F87CAA /* libPods-Swiftui-MoyaTests.a */,
-				FD59FB6304C120C5A683B71A /* libPods-Swiftui-MoyaUITests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,17 +150,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90D9751B29EA293900191FF3 /* Build configuration list for PBXNativeTarget "Swiftui-Moya" */;
 			buildPhases = (
-				3B3E7B001A5674D8843959C1 /* [CP] Check Pods Manifest.lock */,
 				90D974F329EA293800191FF3 /* Sources */,
 				90D974F429EA293800191FF3 /* Frameworks */,
 				90D974F529EA293800191FF3 /* Resources */,
-				2B2B5EA83503C601B5334A4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Swiftui-Moya";
+			packageProductDependencies = (
+				90686F7B29F2561C005A679D /* CombineMoya */,
+			);
 			productName = "Swiftui-Moya";
 			productReference = 90D974F729EA293800191FF3 /* Swiftui-Moya.app */;
 			productType = "com.apple.product-type.application";
@@ -207,7 +170,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90D9751E29EA293900191FF3 /* Build configuration list for PBXNativeTarget "Swiftui-MoyaTests" */;
 			buildPhases = (
-				C994A414EC67BB15F7DA4E0D /* [CP] Check Pods Manifest.lock */,
 				90D9750329EA293900191FF3 /* Sources */,
 				90D9750429EA293900191FF3 /* Frameworks */,
 				90D9750529EA293900191FF3 /* Resources */,
@@ -226,7 +188,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90D9752129EA293900191FF3 /* Build configuration list for PBXNativeTarget "Swiftui-MoyaUITests" */;
 			buildPhases = (
-				5DD8D156192C9265F4838E61 /* [CP] Check Pods Manifest.lock */,
 				90D9750D29EA293900191FF3 /* Sources */,
 				90D9750E29EA293900191FF3 /* Frameworks */,
 				90D9750F29EA293900191FF3 /* Resources */,
@@ -273,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 90D974EE29EA293800191FF3;
+			packageReferences = (
+				90686F7A29F2561C005A679D /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 90D974F829EA293800191FF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,92 +273,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2B2B5EA83503C601B5334A4E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swiftui-Moya/Pods-Swiftui-Moya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swiftui-Moya/Pods-Swiftui-Moya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swiftui-Moya/Pods-Swiftui-Moya-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B3E7B001A5674D8843959C1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swiftui-Moya-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5DD8D156192C9265F4838E61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swiftui-MoyaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C994A414EC67BB15F7DA4E0D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swiftui-MoyaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90D974F329EA293800191FF3 /* Sources */ = {
@@ -559,7 +437,6 @@
 		};
 		90D9751C29EA293900191FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26433812E5B541E715384611 /* Pods-Swiftui-Moya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,7 +465,6 @@
 		};
 		90D9751D29EA293900191FF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B70A9CED2F812A3E31867CE /* Pods-Swiftui-Moya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -617,7 +493,6 @@
 		};
 		90D9751F29EA293900191FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D8BA864E93259DCA05D6B42 /* Pods-Swiftui-MoyaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -637,7 +512,6 @@
 		};
 		90D9752029EA293900191FF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90FFF889D33A2CECB577C433 /* Pods-Swiftui-MoyaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -657,7 +531,6 @@
 		};
 		90D9752229EA293900191FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A87AD256E283676CFB9F122 /* Pods-Swiftui-MoyaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,7 +548,6 @@
 		};
 		90D9752329EA293900191FF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21F27225AD4D747C352278B6 /* Pods-Swiftui-MoyaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -731,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90686F7A29F2561C005A679D /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90686F7B29F2561C005A679D /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90686F7A29F2561C005A679D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90D974EF29EA293800191FF3 /* Project object */;
 }

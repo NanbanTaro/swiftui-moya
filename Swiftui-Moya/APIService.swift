@@ -7,6 +7,8 @@
 //
 
 import Combine
+import CombineMoya
+import Foundation
 import Moya
 
 final class APIService {
