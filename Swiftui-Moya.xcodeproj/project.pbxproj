@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		5202FB2C13FA98FF68E577A5 /* libPods-Swiftui-MoyaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA3456F793E59FEA7F87CAA /* libPods-Swiftui-MoyaTests.a */; };
 		570E3DFEB40E5A4B609FCF62 /* Pods_Swiftui_Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C96EC9F63CDCEFDDA60014 /* Pods_Swiftui_Moya.framework */; };
+		90686F1F29EF5D05005A679D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F1E29EF5D05005A679D /* DetailView.swift */; };
+		90686F2129EF6668005A679D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2029EF6668005A679D /* DetailViewModel.swift */; };
+		90686F2329EFD811005A679D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2229EFD811005A679D /* MainViewModel.swift */; };
+		90686F2529EFE774005A679D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2429EFE774005A679D /* APIService.swift */; };
 		90D974FB29EA293800191FF3 /* Swiftui_MoyaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D974FA29EA293800191FF3 /* Swiftui_MoyaApp.swift */; };
-		90D974FD29EA293800191FF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D974FC29EA293800191FF3 /* ContentView.swift */; };
+		90D974FD29EA293800191FF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D974FC29EA293800191FF3 /* MainView.swift */; };
 		90D974FF29EA293800191FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D974FE29EA293800191FF3 /* Assets.xcassets */; };
 		90D9750229EA293800191FF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D9750129EA293800191FF3 /* Preview Assets.xcassets */; };
 		90D9750C29EA293900191FF3 /* Swiftui_MoyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D9750B29EA293900191FF3 /* Swiftui_MoyaTests.swift */; };
@@ -43,9 +47,14 @@
 		26433812E5B541E715384611 /* Pods-Swiftui-Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-Moya.debug.xcconfig"; path = "Target Support Files/Pods-Swiftui-Moya/Pods-Swiftui-Moya.debug.xcconfig"; sourceTree = "<group>"; };
 		4A87AD256E283676CFB9F122 /* Pods-Swiftui-MoyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-MoyaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Swiftui-MoyaUITests/Pods-Swiftui-MoyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D8BA864E93259DCA05D6B42 /* Pods-Swiftui-MoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftui-MoyaTests.debug.xcconfig"; path = "Target Support Files/Pods-Swiftui-MoyaTests/Pods-Swiftui-MoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90686F1E29EF5D05005A679D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		90686F2029EF6668005A679D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		90686F2229EFD811005A679D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		90686F2429EFE774005A679D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		90686F2629F1269B005A679D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		90D974F729EA293800191FF3 /* Swiftui-Moya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftui-Moya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D974FA29EA293800191FF3 /* Swiftui_MoyaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftui_MoyaApp.swift; sourceTree = "<group>"; };
-		90D974FC29EA293800191FF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90D974FC29EA293800191FF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		90D974FE29EA293800191FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90D9750129EA293800191FF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90D9750729EA293900191FF3 /* Swiftui-MoyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swiftui-MoyaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +133,13 @@
 		90D974F929EA293800191FF3 /* Swiftui-Moya */ = {
 			isa = PBXGroup;
 			children = (
+				90686F2629F1269B005A679D /* Info.plist */,
 				90D974FA29EA293800191FF3 /* Swiftui_MoyaApp.swift */,
-				90D974FC29EA293800191FF3 /* ContentView.swift */,
+				90D974FC29EA293800191FF3 /* MainView.swift */,
+				90686F2229EFD811005A679D /* MainViewModel.swift */,
+				90686F1E29EF5D05005A679D /* DetailView.swift */,
+				90686F2029EF6668005A679D /* DetailViewModel.swift */,
+				90686F2429EFE774005A679D /* APIService.swift */,
 				90D974FE29EA293800191FF3 /* Assets.xcassets */,
 				90D9750029EA293800191FF3 /* Preview Content */,
 			);
@@ -387,8 +401,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90D974FD29EA293800191FF3 /* ContentView.swift in Sources */,
+				90686F2329EFD811005A679D /* MainViewModel.swift in Sources */,
+				90D974FD29EA293800191FF3 /* MainView.swift in Sources */,
+				90686F1F29EF5D05005A679D /* DetailView.swift in Sources */,
 				90D974FB29EA293800191FF3 /* Swiftui_MoyaApp.swift in Sources */,
+				90686F2529EFE774005A679D /* APIService.swift in Sources */,
+				90686F2129EF6668005A679D /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +568,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Swiftui-Moya/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Swiftui-Moya/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -579,7 +597,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Swiftui-Moya/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Swiftui-Moya/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

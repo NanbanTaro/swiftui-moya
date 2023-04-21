@@ -12,7 +12,7 @@ import SwiftUI
 struct Swiftui_MoyaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

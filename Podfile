@@ -19,7 +19,6 @@ target 'Swiftui-MoyaUITests' do
   # Pods for testing
 end
 
-
 post_install do |installer|
   target_names = [
     'Alamofire',
