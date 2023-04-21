@@ -10,10 +10,11 @@ import Foundation
 import Combine
 
 final class DetailViewModel: ObservableObject {
-    private var cancellables: AnyCancellable?
+    private let service = APIService()
+    private var cancellables = Set<AnyCancellable>()
 
     func fetch() {
-        self.cancellables = APIService().fetchAdvice().sink(
+        self.service.fetchAdvice().sink(
             receiveCompletion: { result in
                 switch result {
                 case .failure(let error):
@@ -26,5 +27,6 @@ final class DetailViewModel: ObservableObject {
                 print(myModel)
             }
         )
+        .store(in: &cancellables)
     }
 }

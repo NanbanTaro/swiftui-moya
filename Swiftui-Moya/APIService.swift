@@ -14,33 +14,6 @@ final class APIService {
     let provider = MoyaProvider<AdviceAPI>()
 
     func fetchAdvice() -> AnyPublisher<AdviceModel, Error> {
-        // TODO: 必要？
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-
-        let cancellable = provider.requestPublisher(.advice)
-            .sink(
-                receiveCompletion: { completion in
-                    switch completion {
-                    case .finished:
-                        print("APIコールが完了しました。")
-                    case .failure(let error):
-                        print("エラーが発生しました： \(error.localizedDescription)")
-                    }
-                },
-                receiveValue: { response in
-                    // レスポンスを処理
-                    let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
-                    do {
-                        let searchResult = try decoder.decode(AdviceModel.self, from: response.data)
-                        print("リポジトリの数： \(searchResult.slip.advice)")
-                    } catch {
-                        print("デコードエラー： \(error.localizedDescription)")
-                    }
-                }
-            )
-
         return self.provider
             .requestPublisher(.advice)
             .tryMap { response in
@@ -49,27 +22,9 @@ final class APIService {
                 }
                 return response.data
             }
-            .decode(type: AdviceModel.self, decoder: decoder)
+            .decode(type: AdviceModel.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
-
-
-//    func fetchAdvice() -> AnyPublisher<String, Error> {
-//        let url = URL(string: "https://api.adviceslip.com/advice")!
-//        return URLSession.shared.dataTaskPublisher(for: url)
-//            .tryMap { data, response -> String in
-//                guard let httpResponse = response as? HTTPURLResponse,
-//                      httpResponse.statusCode == 200 else {
-//                    throw URLError(.badServerResponse)
-//                }
-//                print(String(data: data, encoding: .utf8)!) // APIからのレスポンスをログに出力する
-//                let decodedResponse = try JSONDecoder().decode(AdviceModel.self, from: data)
-//                return decodedResponse.slip.advice
-//            }
-//            .eraseToAnyPublisher()
-//    }
-
-
 }
 
 enum APIError: Error {
