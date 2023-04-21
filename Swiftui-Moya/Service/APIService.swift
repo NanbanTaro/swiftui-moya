@@ -35,38 +35,3 @@ enum APIError: Error {
     case decodingError(DecodingError)
     case genericError(Error)
 }
-
-struct AdviceModel: Decodable {
-    let slip: Slip
-}
-
-struct Slip: Decodable {
-    let id: Int
-    let advice: String
-}
-
-enum AdviceAPI {
-    case advice
-}
-
-extension AdviceAPI: TargetType {
-    var baseURL: URL {
-        return URL(string: "https://api.adviceslip.com")!
-    }
-
-    var path: String {
-        return "/advice"
-    }
-
-    var method: Moya.Method {
-        return .get
-    }
-
-    var task: Moya.Task {
-        return .requestPlain
-    }
-
-    var headers: [String : String]? {
-        return nil
-    }
-}

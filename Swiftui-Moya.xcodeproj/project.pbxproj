@@ -12,6 +12,8 @@
 		90686F2329EFD811005A679D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2229EFD811005A679D /* MainViewModel.swift */; };
 		90686F2529EFE774005A679D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F2429EFE774005A679D /* APIService.swift */; };
 		90686F7C29F2561C005A679D /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 90686F7B29F2561C005A679D /* CombineMoya */; };
+		90686F7E29F256D9005A679D /* AdviceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F7D29F256D9005A679D /* AdviceAPI.swift */; };
+		90686F8029F25714005A679D /* AdviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F7F29F25714005A679D /* AdviceModel.swift */; };
 		90D974FB29EA293800191FF3 /* Swiftui_MoyaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D974FA29EA293800191FF3 /* Swiftui_MoyaApp.swift */; };
 		90D974FD29EA293800191FF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D974FC29EA293800191FF3 /* MainView.swift */; };
 		90D974FF29EA293800191FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D974FE29EA293800191FF3 /* Assets.xcassets */; };
@@ -43,7 +45,9 @@
 		90686F2029EF6668005A679D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		90686F2229EFD811005A679D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		90686F2429EFE774005A679D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		90686F2629F1269B005A679D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		90686F2629F1269B005A679D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90686F7D29F256D9005A679D /* AdviceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceAPI.swift; sourceTree = "<group>"; };
+		90686F7F29F25714005A679D /* AdviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceModel.swift; sourceTree = "<group>"; };
 		90D974F729EA293800191FF3 /* Swiftui-Moya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftui-Moya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D974FA29EA293800191FF3 /* Swiftui_MoyaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swiftui_MoyaApp.swift; sourceTree = "<group>"; };
 		90D974FC29EA293800191FF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -82,6 +86,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90686F8129F257A0005A679D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90686F8629F25840005A679D /* Response */,
+				90686F7D29F256D9005A679D /* AdviceAPI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90686F8229F257A8005A679D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90D974FC29EA293800191FF3 /* MainView.swift */,
+				90686F1E29EF5D05005A679D /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90686F8329F257B8005A679D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90686F2229EFD811005A679D /* MainViewModel.swift */,
+				90686F2029EF6668005A679D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90686F8429F257D1005A679D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				90686F2429EFE774005A679D /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		90686F8529F257FE005A679D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90D974FE29EA293800191FF3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90686F8629F25840005A679D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				90686F7F29F25714005A679D /* AdviceModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		90D974EE29EA293800191FF3 = {
 			isa = PBXGroup;
 			children = (
@@ -105,14 +160,13 @@
 		90D974F929EA293800191FF3 /* Swiftui-Moya */ = {
 			isa = PBXGroup;
 			children = (
-				90686F2629F1269B005A679D /* Info.plist */,
 				90D974FA29EA293800191FF3 /* Swiftui_MoyaApp.swift */,
-				90D974FC29EA293800191FF3 /* MainView.swift */,
-				90686F2229EFD811005A679D /* MainViewModel.swift */,
-				90686F1E29EF5D05005A679D /* DetailView.swift */,
-				90686F2029EF6668005A679D /* DetailViewModel.swift */,
-				90686F2429EFE774005A679D /* APIService.swift */,
-				90D974FE29EA293800191FF3 /* Assets.xcassets */,
+				90686F2629F1269B005A679D /* Info.plist */,
+				90686F8129F257A0005A679D /* Model */,
+				90686F8229F257A8005A679D /* View */,
+				90686F8329F257B8005A679D /* ViewModel */,
+				90686F8429F257D1005A679D /* Service */,
+				90686F8529F257FE005A679D /* Resources */,
 				90D9750029EA293800191FF3 /* Preview Content */,
 			);
 			path = "Swiftui-Moya";
@@ -280,7 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90686F2329EFD811005A679D /* MainViewModel.swift in Sources */,
+				90686F8029F25714005A679D /* AdviceModel.swift in Sources */,
 				90D974FD29EA293800191FF3 /* MainView.swift in Sources */,
+				90686F7E29F256D9005A679D /* AdviceAPI.swift in Sources */,
 				90686F1F29EF5D05005A679D /* DetailView.swift in Sources */,
 				90D974FB29EA293800191FF3 /* Swiftui_MoyaApp.swift in Sources */,
 				90686F2529EFE774005A679D /* APIService.swift in Sources */,
