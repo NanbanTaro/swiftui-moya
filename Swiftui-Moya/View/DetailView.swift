@@ -10,17 +10,30 @@ import SwiftUI
 import Combine
 
 struct DetailView: View {
+
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var viewModel: DetailViewModel
     @Binding var text: String
+
+    @StateObject private var viewModel: DetailViewModel = DetailViewModel()
 
     var body: some View {
         VStack {
-            Text(self.text)
-            Button("戻る") {
-                viewModel.fetch()
-                dismiss()
+            Text(self.viewModel.advice.slip.advice)
+            Spacer()
+            Button("I need.") {
+                self.viewModel.fetch()
             }
+            .frame(width: 100, height: 100)
+            .foregroundColor(.white)
+            .background(.blue)
+            .cornerRadius(20)
+            Button("back") {
+                self.dismiss()
+            }
+        }
+        .onDisappear {
+            // 画面が閉じるときの処理
+            self.text = self.viewModel.advice.slip.advice
         }
     }
 }

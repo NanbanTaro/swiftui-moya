@@ -9,31 +9,29 @@
 import SwiftUI
 
 struct MainView: View {
+
     @ObservedObject private var viewModel = MainViewModel()
+    @State private var adviceText = "Need some advice?"
 
     var body: some View {
         NavigationView {
             VStack {
-                Text(viewModel.text)
-                HStack {
-                    let detailView = DetailView(viewModel: DetailViewModel(),
-                                                text: $viewModel.text)
+                Text(self.adviceText)
+                HStack(alignment: .center) {
+                    let detailView = DetailView(text: self.$adviceText)
                     NavigationLink(destination: detailView) {
-                        Text("プッシュ遷移")
+                        Text("push")
                     }
-                    .simultaneousGesture(TapGesture().onEnded {
-                        viewModel.changeText(text: "プッシュ遷移だよ")
-                    })
-                    Button("モーダル遷移") {
-                        viewModel.changeText(text: "モーダル遷移だよ")
-                        viewModel.changeIsShowingModalView()
+                    .padding(30)
+                    Button("modal") {
+                        self.viewModel.changeIsShowingModalView()
                     }
-                    .sheet(isPresented: $viewModel.isShowingModalView) {
+                    .sheet(isPresented: self.$viewModel.isShowingModalView) {
                         detailView
                     }
+                    .padding(30)
                 }
             }
-            .padding()
         }
     }
 }

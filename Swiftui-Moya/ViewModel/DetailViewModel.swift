@@ -11,6 +11,8 @@ import Combine
 
 final class DetailViewModel: ObservableObject {
 
+    @Published var advice = AdviceModel(slip: Slip())
+
     private let APIservice: APIServiceProtocols
     private var cancellables = Set<AnyCancellable>()
 
@@ -29,11 +31,12 @@ final class DetailViewModel: ObservableObject {
                 case .failure(let error):
                     print(error)
                 case .finished:
+                    // TODO: インジケータを表示する
                     print("ok")
                 }
             },
             receiveValue: { myModel in
-                print(myModel)
+                self.advice = myModel
             }
         )
         .store(in: &cancellables)

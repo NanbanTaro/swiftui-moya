@@ -7,10 +7,10 @@
 //
 
 struct AdviceModel: Decodable {
-    let slip: Slip
+    var slip: Slip = Slip()
 }
 
 struct Slip: Decodable {
-    let id: Int
-    let advice: String
+    var id: Int = 0
+    var advice: String = "Need some advice?"
 }
