@@ -17,18 +17,34 @@ struct DetailView: View {
     @StateObject private var viewModel: DetailViewModel = DetailViewModel()
 
     var body: some View {
-        VStack {
-            Text(self.viewModel.advice.slip.advice)
-            Spacer()
-            Button("I need.") {
-                self.viewModel.fetch()
+        ZStack {
+            VStack {
+                Spacer()
+                Text(self.viewModel.advice.slip.advice)
+                Spacer()
+                Button("I need.") {
+                    self.viewModel.fetch()
+                }
+                .frame(width: 100, height: 100)
+                .buttonStyle(CustomButtonStyle())
+                .cornerRadius(20)
+                // インジケータ表示中は非活性
+                .disabled(self.viewModel.isShowingIndicator)
+                Button("back") {
+                    self.dismiss()
+                }
             }
-            .frame(width: 100, height: 100)
-            .foregroundColor(.white)
-            .background(.blue)
-            .cornerRadius(20)
-            Button("back") {
-                self.dismiss()
+            // インジケータの表示
+            if self.viewModel.isShowingIndicator {
+                VStack {
+                    Spacer()
+                    ActivityIndicator()
+                        .frame(width: 100, height: 100)
+                        .background(.gray.opacity(0.8))
+                        .clipped(antialiased: true)
+                        .cornerRadius(12)
+                    Spacer()
+                }
             }
         }
         .onDisappear {

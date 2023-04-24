@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9008707B29F65B1200C2DDC4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008707A29F65B1200C2DDC4 /* ActivityIndicator.swift */; };
+		9008707D29F65DFD00C2DDC4 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008707C29F65DFD00C2DDC4 /* ButtonStyle.swift */; };
 		902659B129F26DF300291884 /* APIServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902659B029F26DF300291884 /* APIServiceProtocols.swift */; };
 		902659B329F26E3A00291884 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902659B229F26E3A00291884 /* APIError.swift */; };
 		90686F1F29EF5D05005A679D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90686F1E29EF5D05005A679D /* DetailView.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9008707A29F65B1200C2DDC4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		9008707C29F65DFD00C2DDC4 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		902659B029F26DF300291884 /* APIServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocols.swift; sourceTree = "<group>"; };
 		902659B229F26E3A00291884 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		90686F1E29EF5D05005A679D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9008707929F65B0000C2DDC4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				9008707A29F65B1200C2DDC4 /* ActivityIndicator.swift */,
+				9008707C29F65DFD00C2DDC4 /* ButtonStyle.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		902659B429F26E6000291884 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 		90686F8229F257A8005A679D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9008707929F65B0000C2DDC4 /* CustomView */,
 				90D974FC29EA293800191FF3 /* MainView.swift */,
 				90686F1E29EF5D05005A679D /* DetailView.swift */,
 			);
@@ -352,9 +366,11 @@
 				902659B129F26DF300291884 /* APIServiceProtocols.swift in Sources */,
 				90D974FD29EA293800191FF3 /* MainView.swift in Sources */,
 				90686F7E29F256D9005A679D /* AdviceAPI.swift in Sources */,
+				9008707B29F65B1200C2DDC4 /* ActivityIndicator.swift in Sources */,
 				902659B329F26E3A00291884 /* APIError.swift in Sources */,
 				90686F1F29EF5D05005A679D /* DetailView.swift in Sources */,
 				90D974FB29EA293800191FF3 /* Swiftui_MoyaApp.swift in Sources */,
+				9008707D29F65DFD00C2DDC4 /* ButtonStyle.swift in Sources */,
 				90686F2529EFE774005A679D /* APIService.swift in Sources */,
 				90686F2129EF6668005A679D /* DetailViewModel.swift in Sources */,
 			);
