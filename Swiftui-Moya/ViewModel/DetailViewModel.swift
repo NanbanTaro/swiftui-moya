@@ -12,6 +12,7 @@ import Combine
 final class DetailViewModel: ObservableObject {
 
     @Published var advice = AdviceModel(slip: Slip())
+    @Published var isShowingIndicator: Bool = false
 
     private let APIservice: APIServiceProtocols
     private var cancellables = Set<AnyCancellable>()
@@ -25,13 +26,15 @@ final class DetailViewModel: ObservableObject {
     // MARK: - Function
 
     func fetch() {
+        self.isShowingIndicator = true
+
         self.APIservice.fetchAdvice().sink(
             receiveCompletion: { result in
+                self.isShowingIndicator = false
                 switch result {
                 case .failure(let error):
                     print(error)
                 case .finished:
-                    // TODO: インジケータを表示する
                     print("ok")
                 }
             },
